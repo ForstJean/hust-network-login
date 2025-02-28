@@ -179,7 +179,7 @@ fn main() {
         match login(&config.username, &config.password) {
             Ok(_) => {
                 println!("login ok. awaiting...");
-                thread::sleep(Duration::from_secs(15));
+                thread::sleep(Duration::from_secs(60));
             }
             Err(e) => {
                 println!("error! {}", e);
